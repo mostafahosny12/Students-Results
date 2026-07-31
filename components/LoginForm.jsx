@@ -109,7 +109,7 @@ export default function LoginForm() {
             htmlFor="student-id"
             className="block text-sm font-medium text-slate-300 mb-2 font-arabic"
           >
-            رقم الطالب
+            كود الطالب
           </label>
           <div className="relative">
             <FiUser
@@ -122,7 +122,7 @@ export default function LoginForm() {
               value={studentId}
               onChange={(e) => setStudentId(e.target.value)}
               className="input-glass pr-12 rtl font-arabic"
-              placeholder="أدخل رقم الطالب"
+              placeholder="أدخل كود الطالب"
               required
               autoComplete="username"
               disabled={loading}
