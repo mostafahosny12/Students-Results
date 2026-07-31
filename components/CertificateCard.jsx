@@ -281,21 +281,26 @@ export default function CertificateCard({ student }) {
                       overflow: 'hidden',
                     }}
                   >
-                    <h2
-                      style={{
-                        fontSize: '2.8rem',
-                        fontWeight: 700,
-                        color: '#92400e',
-                        lineHeight: 1.6,
-                        textAlign: 'center',
-                        margin: 0,
-                        wordBreak: 'break-word',
-                        overflowWrap: 'break-word',
-                        whiteSpace: 'normal',
-                      }}
-                    >
-                      {student.name}
-                    </h2>
+                <h2
+  style={{
+    fontSize: '2.8rem',
+    fontWeight: 700,
+    color: '#92400e',
+
+    lineHeight: 1.8,      // بدل 1.6
+    paddingBottom: '10px', // مهم
+    display: 'inline-block',
+
+    textAlign: 'center',
+    margin: 0,
+
+    wordBreak: 'break-word',
+    overflowWrap: 'break-word',
+    whiteSpace: 'normal',
+  }}
+>
+  {student.name}
+</h2>
                   </div>
 
                   <p style={{
